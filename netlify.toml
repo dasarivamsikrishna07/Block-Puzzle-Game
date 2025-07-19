@@ -1,23 +1,4 @@
-[build]
-  publish = "dist"
-  command = "pip install -r requirements.txt && python -m pygbag --build --width 1000 --height 700 --archive --ume_block 0 src/main.py"
-
-[build.environment]
-  PYTHON_VERSION = "3.11"
-
-[[headers]]
-  for = "/*"
-  [headers.values]
-    Cross-Origin-Embedder-Policy = "require-corp"
-    Cross-Origin-Opener-Policy = "same-origin"
-    Cache-Control = "public, max-age=31536000"
-
-[[headers]]
-  for = "*.html"
-  [headers.values]
-    Cache-Control = "public, max-age=0, must-revalidate"
-
-
-
+cd "C:\Users\hp\OneDrive\ドキュメント\Block-puzzle game"
+python -m pygbag --build --width 1000 --height 700 --archive --ume_block 0 src/main.py
 
 
